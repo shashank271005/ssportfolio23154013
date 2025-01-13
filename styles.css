@@ -270,6 +270,20 @@ h1,p{
 }
 
 
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+}
+
+/* Create three equal columns that sits next to each other */
+.column {
+  flex: 33.33%;
+  padding: 5px;
+}
+
 
 
 
@@ -286,8 +300,7 @@ h1,p{
 
 
 #projects{
-  padding-right: 100px;
-  padding-left: 100px;
+  
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -591,4 +604,7 @@ a{
     padding: 20px;
     padding-bottom: 100px;
   }
+}
+.yoyo{
+  justify-content: right;
 }
