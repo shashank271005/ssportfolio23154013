@@ -4,6 +4,25 @@ var tl = gsap.timeline();
 gsap.registerPlugin(ScrollTrigger) 
 
 
+
+const audio = document.getElementById("bg-audio");
+const control = document.getElementById("audio-control");
+
+let isPlaying = false;
+
+control.addEventListener("click", () => {
+  if (isPlaying) {
+    audio.pause();
+    control.src = "play.png";
+  } else {
+    audio.play();
+    control.src = "pause.png";
+  }
+  isPlaying = !isPlaying;
+});
+
+
+
 tl.to(".load",{
 	delay: 1,
 	opacity: 0,
@@ -90,21 +109,6 @@ scrollTrailer()
 mouseTrailer();
 
 
-const audio = document.getElementById("bg-audio");
-const control = document.getElementById("audio-control");
-
-let isPlaying = false;
-
-control.addEventListener("click", () => {
-  if (isPlaying) {
-    audio.pause();
-    control.src = "play.png";
-  } else {
-    audio.play();
-    control.src = "pause.png";
-  }
-  isPlaying = !isPlaying;
-});
 
 
 
