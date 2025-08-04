@@ -128,7 +128,10 @@ body{
 }
 
 #navbar img:hover{
-  content: url("Images/logohov.png");  
+  content: url("Images/logohov.png");
+  transform: scale(1.2);
+  transition: 1s;  
+  box-shadow: whitesmoke;
 }
 
 
@@ -284,6 +287,23 @@ h1,p{
   padding: 5px;
 }
 
+
+.container {
+  display: flex;
+  justify-content: left;
+  gap: 20px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.container a img {
+  width: 50px;
+  height: 50px;
+  padding: 10px;
+  background-color: #2e3b44;
+  border-radius: 8px;
+  transition: transform 0.3s, background-color 0.3s;
+}
 
 
 
@@ -618,5 +638,6 @@ a{
   cursor: pointer;
   z-index: 9999;
 }
+
 
 
