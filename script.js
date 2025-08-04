@@ -90,3 +90,22 @@ scrollTrailer()
 mouseTrailer();
 
 
+const audio = document.getElementById("bg-audio");
+const control = document.getElementById("audio-control");
+
+let isPlaying = false;
+
+control.addEventListener("click", () => {
+  if (isPlaying) {
+    audio.pause();
+    control.src = "play.png";
+  } else {
+    audio.play();
+    control.src = "pause.png";
+  }
+  isPlaying = !isPlaying;
+});
+
+
+
+
