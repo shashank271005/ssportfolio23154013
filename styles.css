@@ -639,5 +639,11 @@ a{
   z-index: 9999;
 }
 
+#audio-control:hover {
+  transform: scale(1.7);
+  transition: 1s ease-in-out;
+
+}
+
 
 
